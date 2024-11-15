@@ -5,26 +5,28 @@
 class Ollamatea < Formula
   desc "BubbleTea and Ollama components/tools"
   homepage "https://github.com/NimbleMarkets/ollamatea"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/NimbleMarkets/ollamatea/releases/download/0.0.1/ollamatea_Darwin_x86_64.tar.gz"
-      sha256 "184e9f00eb4956517338f9cd6744c209f7b96245d9abc6067cb06b463da586c6"
+      url "https://github.com/NimbleMarkets/ollamatea/releases/download/v0.0.2/ollamatea_Darwin_x86_64.tar.gz"
+      sha256 "655c3e5b4d6bb1ae5db387a1e69cef77293b60e95a5e5609b3a24257be449722"
 
       def install
         bin.install "./bin/ot-ansi-to-png"
+        bin.install "./bin/ot-model-chooser"
         bin.install "./bin/ot-png-prompt"
         bin.install "./bin/ot-simplegen"
         bin.install "./bin/ot-timechart"
       end
     end
     on_arm do
-      url "https://github.com/NimbleMarkets/ollamatea/releases/download/0.0.1/ollamatea_Darwin_arm64.tar.gz"
-      sha256 "02797cd1f04055a6fbadf7c680cbdad43bf3246015e778bc9175d79bb4f27025"
+      url "https://github.com/NimbleMarkets/ollamatea/releases/download/v0.0.2/ollamatea_Darwin_arm64.tar.gz"
+      sha256 "b9bec99e757f0ee1b388e33004f437300c412762b72bd7bb9a217c81f2d0b614"
 
       def install
         bin.install "./bin/ot-ansi-to-png"
+        bin.install "./bin/ot-model-chooser"
         bin.install "./bin/ot-png-prompt"
         bin.install "./bin/ot-simplegen"
         bin.install "./bin/ot-timechart"
@@ -35,11 +37,12 @@ class Ollamatea < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/NimbleMarkets/ollamatea/releases/download/0.0.1/ollamatea_Linux_x86_64.tar.gz"
-        sha256 "d933598d7c22bb7c961dd9b1608ed7e63249df82eb4b383b65695f68507b20e9"
+        url "https://github.com/NimbleMarkets/ollamatea/releases/download/v0.0.2/ollamatea_Linux_x86_64.tar.gz"
+        sha256 "678c6cc1547549212a586c59540120141ff4e6c8d086fba4a1f93abcabe161ac"
 
         def install
           bin.install "./bin/ot-ansi-to-png"
+          bin.install "./bin/ot-model-chooser"
           bin.install "./bin/ot-png-prompt"
           bin.install "./bin/ot-simplegen"
           bin.install "./bin/ot-timechart"
@@ -48,11 +51,12 @@ class Ollamatea < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/NimbleMarkets/ollamatea/releases/download/0.0.1/ollamatea_Linux_arm64.tar.gz"
-        sha256 "e2e01f2f5c1bae0c18dfb73fed66e858c714e34b1af82faff3b8920644986cb8"
+        url "https://github.com/NimbleMarkets/ollamatea/releases/download/v0.0.2/ollamatea_Linux_arm64.tar.gz"
+        sha256 "077808211923f176280de0a396c2c326bb655bfda6812459e8226c4ffac8f75c"
 
         def install
           bin.install "./bin/ot-ansi-to-png"
+          bin.install "./bin/ot-model-chooser"
           bin.install "./bin/ot-png-prompt"
           bin.install "./bin/ot-simplegen"
           bin.install "./bin/ot-timechart"
