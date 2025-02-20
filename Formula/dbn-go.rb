@@ -5,12 +5,12 @@
 class DbnGo < Formula
   desc "Golang tooling for Databento's APIs and DBN format"
   homepage "https://github.com/NimbleMarkets/dbn-go"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/NimbleMarkets/dbn-go/releases/download/v0.3.0/dbn-go_Darwin_x86_64.tar.gz"
-      sha256 "85f49c1e5fd25f2bf68e781f39fb325bc9fac0b9bb7f0faf4e680f18cd0148fb"
+      url "https://github.com/NimbleMarkets/dbn-go/releases/download/v0.4.0/dbn-go_Darwin_x86_64.tar.gz"
+      sha256 "d4d9a91330ce3d663ff23da1f4101c91ecc987928ef28f86f0313a2348307827"
 
       def install
         bin.install "./bin/dbn-go-file"
@@ -20,8 +20,8 @@ class DbnGo < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/NimbleMarkets/dbn-go/releases/download/v0.3.0/dbn-go_Darwin_arm64.tar.gz"
-      sha256 "76737d28557248ebdd9c799812129ee637202db74ea8f60f8d996146588cdf1b"
+      url "https://github.com/NimbleMarkets/dbn-go/releases/download/v0.4.0/dbn-go_Darwin_arm64.tar.gz"
+      sha256 "dd51114dee267eb2cbe20faa9fda1959b19fa341df955c92a1eb19fa114910d0"
 
       def install
         bin.install "./bin/dbn-go-file"
@@ -35,8 +35,8 @@ class DbnGo < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/NimbleMarkets/dbn-go/releases/download/v0.3.0/dbn-go_Linux_x86_64.tar.gz"
-        sha256 "b6c0a1a75938b2826dacdb72ebe9faa34538fb334aa76dc5fd78bad7ecfb24bb"
+        url "https://github.com/NimbleMarkets/dbn-go/releases/download/v0.4.0/dbn-go_Linux_x86_64.tar.gz"
+        sha256 "507dd6575f7963de24b79ee5162c5d7a328ba3083439310e7442a384aedac377"
 
         def install
           bin.install "./bin/dbn-go-file"
@@ -48,8 +48,8 @@ class DbnGo < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/NimbleMarkets/dbn-go/releases/download/v0.3.0/dbn-go_Linux_arm64.tar.gz"
-        sha256 "266ca351cb63a0c2a827cb00239dd841b46e3ad7fd31280a9cabb4c86dc51109"
+        url "https://github.com/NimbleMarkets/dbn-go/releases/download/v0.4.0/dbn-go_Linux_arm64.tar.gz"
+        sha256 "48a95b29bc6821dab3bc7569b2152925a09719f1609059c0af56ef5a310fb216"
 
         def install
           bin.install "./bin/dbn-go-file"
