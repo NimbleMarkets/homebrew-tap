@@ -3,7 +3,7 @@ cask "dbn-go-mcp-data" do
   name "dbn-go-mcp-data"
   desc "MCP Data Server for Databento's APIs"
   homepage "https://github.com/NimbleMarkets/dbn-go"
-  version "0.8.9"
+  version "0.8.10"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "dbn-go-mcp-data" do
     on_intel do
       url "https://github.com/NimbleMarkets/dbn-go/releases/download/v#{version}/dbn-go-mcp-data_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/nimblemarkets/dbn-go"
-      sha256 "c4a2854d51177a4f6ea7e55fbfa413fde547256eca3d5b7dffe70e6f857fb537"
+      sha256 "44db83e181d9786d35e7b741b9792a53b66897b22bd7254502d0b023b013fd01"
     end
     on_arm do
       url "https://github.com/NimbleMarkets/dbn-go/releases/download/v#{version}/dbn-go-mcp-data_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/nimblemarkets/dbn-go"
-      sha256 "27f43b01c0e6068d621ff339e3e659e4850cf9d13ef7332ffb7e05945112eb1e"
+      sha256 "ebd24ddeeb9a1eb95388380ef90aae7adb52f1042799d0928692cbde6a671adc"
     end
   end
 
@@ -28,12 +28,12 @@ cask "dbn-go-mcp-data" do
     on_intel do
       url "https://github.com/NimbleMarkets/dbn-go/releases/download/v#{version}/dbn-go-mcp-data_#{version}_linux_amd64.tar.gz",
         verified: "github.com/nimblemarkets/dbn-go"
-      sha256 "3623efaacfb7177800b5cccae3ba45200fba13774f2579e5c82026e73c41e6a5"
+      sha256 "283f83ea88000b1d951cda837500b8ee444c3beff1e32a4de865edea0637eb2a"
     end
     on_arm do
       url "https://github.com/NimbleMarkets/dbn-go/releases/download/v#{version}/dbn-go-mcp-data_#{version}_linux_arm64.tar.gz",
         verified: "github.com/nimblemarkets/dbn-go"
-      sha256 "745e4d14f9baba930df45a83f19ced3bdf5fcfc176686e0c30bd38a2f147967c"
+      sha256 "38b5d154042e5df830f5f9bb95a951eb41b52e722333d0dc459bf6e24ce95f67"
     end
   end
 
