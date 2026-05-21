@@ -5,13 +5,13 @@
 class Ds4go < Formula
   desc "Pure-Go ds4 inference tooling for the DeepSeek-V4 engine"
   homepage "https://github.com/NimbleMarkets/ds4go"
-  version "0.2.3"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/NimbleMarkets/ds4go/releases/download/v0.2.3/ds4go_0.2.3_darwin_amd64.tar.gz"
-      sha256 "e80cd81a215f1f5deb345ecfeb003c080f18bff71cd9fe7ee6a3152684ed3ced"
+      url "https://github.com/NimbleMarkets/ds4go/releases/download/v0.3.0/ds4go_0.3.0_darwin_amd64.tar.gz"
+      sha256 "173f7744d1f8c62545d4a2f92804f0fe5f2953d93ddf9c650f7131de8ec70b7b"
 
       define_method(:install) do
         bin.install "ds4go"
@@ -19,8 +19,8 @@ class Ds4go < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/NimbleMarkets/ds4go/releases/download/v0.2.3/ds4go_0.2.3_darwin_arm64.tar.gz"
-      sha256 "cda0e555c6351e444d8c0e1818212e426f2280f98dfe322a63a3661240126242"
+      url "https://github.com/NimbleMarkets/ds4go/releases/download/v0.3.0/ds4go_0.3.0_darwin_arm64.tar.gz"
+      sha256 "04e694865ae3d300b057fc1b5b7d4254fed63576ba0666f5a0c69a8ecd4f4c5c"
 
       define_method(:install) do
         bin.install "ds4go"
@@ -31,16 +31,16 @@ class Ds4go < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NimbleMarkets/ds4go/releases/download/v0.2.3/ds4go_0.2.3_linux_amd64.tar.gz"
-      sha256 "d90fb514265f1897e3bf9b18cc8aa9058af3acbb5ba2a3d41ed43ecab07333a2"
+      url "https://github.com/NimbleMarkets/ds4go/releases/download/v0.3.0/ds4go_0.3.0_linux_amd64.tar.gz"
+      sha256 "acfc09218689074a8228f1a4d9689b476c0854044eaf157f0fa441a9bd6454f9"
       define_method(:install) do
         bin.install "ds4go"
         generate_completions_from_executable(bin/"ds4go", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NimbleMarkets/ds4go/releases/download/v0.2.3/ds4go_0.2.3_linux_arm64.tar.gz"
-      sha256 "18e3a43e674ca568ddc350cae5832cd7df0e1fffffc0e1b0cedb8983e498923a"
+      url "https://github.com/NimbleMarkets/ds4go/releases/download/v0.3.0/ds4go_0.3.0_linux_arm64.tar.gz"
+      sha256 "e4dbfd82211da476087fa8ea0abfb0271d0a8d800f3f0c34d74f2304646b71e2"
       define_method(:install) do
         bin.install "ds4go"
         generate_completions_from_executable(bin/"ds4go", "completion")
